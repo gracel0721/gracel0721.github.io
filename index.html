@@ -9,26 +9,24 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <h1>Hi! I'm Grace</h1>
         <!-- put picture here -->
     <!-- <img src="profile.jpg" alt="Profile Picture">  -->
     <p>I am a 22 year old software engineer based in North NJ. This is my personal website. I created this website to showcase my projects and skills, and to brush up on my front end development skills in the process.</p>
-]    <p> I also have an interest in firmware and embedded systems engineering (which is like the complete opposite of web dev) In my free time, I enjoy hiking, reading, traveling, crocheting, playing with my cat, Wayne, and exploring new technologies. I am also in the process of getting my Comprehensive Pilates Teacher Certification.</p>
+    <p> I also have an interest in firmware and embedded systems engineering (which is like the complete opposite of web dev) In my free time, I enjoy hiking, reading, traveling, crocheting, playing with my cat, Wayne, and exploring new technologies. I am also in the process of getting my Comprehensive Pilates Teacher Certification.</p>
     <!-- include pictures of cat, hiking/travel pics, etc -->
-
-    <h2>Projects</h2>
-        <a href="https://github.com/gracel0721" target="_blank">Check out my Github!</a>
-    <h3>Socials</h3>
+<br><br>
+    <h2>Socials</h2>
     <p>Connect with me!</p>
-    <ul>
-        
-        <li><a href="https://www.linkedin.com/in/grace-leverett/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/grace_lev721" target="_blank">Instagram</a></li>
-    </ul>
-    <footer>
-        <p>This is a static website built with HTML, CSS, and Jekyll.</p>
-    </footer>
+    <a href="{{ site.data.socials.linkedin.href }}{{ site.data.socials.linkedin.id }}" title="Connect with me on LinkedIn!"><i class="{{site.data.socials.linkedin.fa-icon}}"></i> Linkedin</a>
+    <a href="{{ site.data.socials.github.href }}{{ site.data.socials.github.id }}" title="Check out my GitHub!"><i class="{{site.data.socials.github.fa-icon}}"></i> Github</a>
+    <a href="{{ site.data.socials.instagram.href }}{{ site.data.socials.instagram.id }}" title="Follow me on Instagram!"><i class="{{site.data.socials.instagram.fa-icon}}"></i> Instagram</a>
+
+    <!-- <h2>Projects</h2>
+    <a href="https://github.com/gracel0721" target="_blank">Check out my Github!</a> -->
+
 </body>
 </html>

@@ -1,0 +1,24 @@
+email:
+  id: 'gvleverett@gmail.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa fa-envelope-square'
+
+instagram:
+  id: 'grace_lev721'
+  href: 'https://www.instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fa fa-instagram'
+
+linkedin:
+  id: 'grace-leverett'
+  href: 'https://www.linkedin.com/in/'
+  title: 'Linkedin'
+  fa-icon: 'fa fa-linkedin-square'
+
+github:
+  id: 'gracel0721'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa fa-github-square'
+

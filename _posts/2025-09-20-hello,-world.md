@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Grace
+published: true
 ---
 Hi there! This is my very first blog post here on my website, so I figured it would probably be best to tell you about me. My writing skills have atrophied a great deal, since I haven't really had to write anything except documentation and confluence pages since my freshman year of college (2019), so please bear with me. Hopefully this will be more bearable for both of us as time goes on and I write more.
 

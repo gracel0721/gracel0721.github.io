@@ -1,0 +1,17 @@
+<footer>
+  <p>This is a static website built with HTML, CSS, and Jekyll.</p>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <p>Connect with me!
+  <a href="{{ site.data.socials.linkedin.href }}{{ site.data.socials.linkedin.id }}" title="Connect with me on LinkedIn!"><i class="{{site.data.socials.linkedin.fa-icon}}"></i></a>
+  <a href="{{ site.data.socials.github.href }}{{ site.data.socials.github.id }}" title="Check out my GitHub!"><i class="{{site.data.socials.github.fa-icon}}"></i></a>
+  <a href="{{ site.data.socials.instagram.href }}{{ site.data.socials.instagram.id }}" title="Follow me on Instagram!"><i class="{{site.data.socials.instagram.fa-icon}}"></i></a>
+  </p>
+
+  <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
+    <span>
+        <b>{{ site.owner}}</b>
+    </span>
+    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
+    <span>© {{ currentyear }}</span>
+  </a>
+</footer>
