@@ -1,10 +1,9 @@
 title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+description: "Grace Leverett's personal blog about tech, life, and everything in between."
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
-
+  name: "Grace"
+  email: "gvleverett@gmail.com"
+  url: "https://gracel0721.github.io"
 baseurl: /
 
 source: .
