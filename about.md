@@ -21,7 +21,7 @@ Some pictures of Wayne: <br>
 
 <!-- Here are some pictures of my hiking trips: -->
 <!-- include hiking trip stuff -->
-
+   
 
 
 
