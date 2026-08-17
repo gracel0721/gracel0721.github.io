@@ -3,27 +3,15 @@ layout: page
 title: About
 ---
 
-I am a 23 year old software engineer based in North NJ. This is my personal website. I created this website to showcase my projects and skills, and to brush up on my front end development skills in the process. I have an interest in firmware and embedded systems engineering, and LLM powered workflows and agents (and who doesn't these days?). In my free time, I enjoy hiking, reading, traveling, crocheting, playing with my cat, Wayne, and exploring new technologies. I am also in the process of getting my Comprehensive Pilates Teacher Certification.
+I'm a software engineer based in the NYC area. While my background is in software engineering, I'm currently focusing on moving into data science and analytics. I've always enjoyed figuring out how things work, and now I'm applying that to finding insights in data.
 
-Some pictures of Wayne: <br>
-<!-- ![Wayne 1](assets/img1cat.jpg "Optional Title")
-![Wayne 2](assets/img2cat.jpg "Optional Title") -->
-<div class = "cat-pics">
-    <div class = "right">
-        <img src="assets/img1cat.jpg" alt="him napping on the couch" width="500"/>
-    </div>
-    <div class="left">
-        <img src="assets/img2cat.jpg" alt="a picture of Wayne" width="400"/>
-    </div>
+Outside of software and data, I enjoy hiking (Mt. Tammany in NJ is one of my favorites), reading, traveling, and crochet (I crocheted a queen-size blanket that I use to this day. It took me a year). I'm also in the process of getting my Comprehensive Pilates Teacher Certification, which helps me stay balanced.
+
+And then there's Wayne. 
+
+<div class="photo-gallery">
+    <img src="assets/img1cat.jpg" alt="Wayne napping on the couch">
+    <img src="assets/img2cat.jpg" alt="A picture of Wayne">
 </div>
 
-<style> .cat-pics { display: flex; } .left { flex: 1; padding: 20px; } .right { flex: 1; padding: 20px; float: right} </style> 
-
-<!-- Here are some pictures of my hiking trips: -->
-<!-- include hiking trip stuff -->
-   
-
-
-
-
-  <!-- include pictures of cat, hiking/travel pics, etc -->
+Wayne is my cat and, effectively, the CEO of my apartment, despite paying no bills.

@@ -6,8 +6,8 @@ title: Portfolio
 <div class="container">
     <section id="portfolio">
         <div class="portfolio-intro">
-            <h1>Data Science Portfolio</h1>
-            <p>A collection of my data analysis and machine learning projects. I focus on transforming raw data into actionable insights through rigorous analysis and storytelling.</p>
+            <h1>Portfolio</h1>
+            <p>A collection of my technical projects and explorations. I enjoy building tools and analyzing data to solve interesting problems.</p>
         </div>
 
         <div class="portfolio-grid">
@@ -27,8 +27,8 @@ title: Portfolio
                             <i class="fa fa-github"></i> Code
                         </a>
                         {% if project.writeup_link %}
-                        <a href="{{ project.writeup_link }}" class="btn btn-analysis">
-                            <i class="fa fa-file-text"></i> Analysis
+                        <a href="{{ project.writeup_link }}" class="btn btn-details">
+                            <i class="fa fa-file-text"></i> Details
                         </a>
                         {% endif %}
                     </div>

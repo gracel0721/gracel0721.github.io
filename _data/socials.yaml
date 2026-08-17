@@ -22,3 +22,9 @@ github:
   title: 'GitHub'
   fa-icon: 'fa fa-github-square'
 
+twitter:
+  id: 'grace_lev721'
+  href: 'https://x.com/'
+  title: 'X'
+  fa-icon: 'fa fa-twitter-square'
+
