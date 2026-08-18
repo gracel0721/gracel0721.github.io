@@ -4,18 +4,13 @@ layout: default
 ---
 
 <div class="container">
-    <section class="profile-container">
-        <div class="profile-card">
-            <div class="profile-image-wrapper">
-                <img src="assets/img4gracecropped.png" alt="Profile Picture" class="profile-image">
-            </div>
-            <div class="profile-text">
-                <h1>Hi! I'm Grace</h1>
-                <p>I'm a software engineer based in Northern New Jersey. I created this site to showcase my projects and share what I'm working on as I grow as a developer.</p>
-                <p>I'm passionate about finding the stories and insights hidden in raw data and building tools that solve interesting problems. In my spare time, I'm also building LLM-powered workflows and RAG pipelines.</p>
-                <p>Check out my GitHub to see my technical projects, or head over to my blog to read about tech, hobbies, and whatever else I find interesting.</p>
-                <p>Visit my About page to get to know me better (and see pictures of my cat :D ).</p>
-            </div>
+    <section class="hero-section">
+        <div class="hero-image-wrapper">
+            <img src="assets/img4gracecropped.png" alt="Profile Picture" class="hero-image">
+        </div>
+        <div class="hero-text-container">
+            <h1 class="hero-title">Grace Leverett</h1>
+            <p class="hero-subtitle">Software Engineer in Finance Transitioning to Data Science</p>
         </div>
     </section>
 
@@ -32,8 +27,8 @@ layout: default
             <a href="{{ site.data.socials.twitter.href }}{{ site.data.socials.twitter.id }}" title="Follow me on X!">
                 <i class="{{site.data.socials.twitter.fa-icon}}"></i> X
             </a>
-            <a href="{{ site.data.socials.instagram.href }}{{ site.data.socials.instagram.id }}" title="Follow me on Instagram!">
-                <i class="{{site.data.socials.instagram.fa-icon}}"></i> Instagram
+            <a href="{{ site.data.socials.email.href }}{{ site.data.socials.email.id }}" title="Send me an email!">
+                <i class="{{site.data.socials.email.fa-icon}}"></i> Email
             </a>
         </div>
     </div>

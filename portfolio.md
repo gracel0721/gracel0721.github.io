@@ -28,7 +28,12 @@ title: Portfolio
                         </a>
                         {% if project.writeup_link %}
                         <a href="{{ project.writeup_link }}" class="btn btn-details">
-                            <i class="fa fa-file-text"></i> Details
+                            <i class="fa fa-file-text"></i> Summary
+                        </a>
+                        {% endif %}
+                        {% if project.viz_link %}
+                        <a href="{{ project.viz_link }}" target="_blank" class="btn btn-viz">
+                            <i class="fa fa-chart-bar"></i> Visualization
                         </a>
                         {% endif %}
                     </div>
