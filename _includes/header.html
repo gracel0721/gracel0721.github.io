@@ -1,53 +1,60 @@
-<header>
-  <div class="header-content">
-    <div class="terminal-window">
-      <div class="terminal-dots">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
+<!-- begin header -->
+<header class="c-header">
+  <div class="container">
+    <div class="row">
+      <div class="c-header__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="{{ site.baseurl }}/">
+          {%if site.data.navigation.logo_image %}
+            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.navigation.logo_image }}" alt="{{ site.data.general_settings.title }}">
+          {% else %}
+            {{ site.data.general_settings.title }}
+          {% endif %}
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__box">
+
+            <div class="nav__icon-close">
+              <ion-icon class="nav-icon-close" name="close"></ion-icon>
+            </div>
+
+            <div class="nav__title">Menu</div>
+
+              <ul class="nav__list list-reset">
+
+              {% for item in site.data.navigation.menu__settings.menu__items %}
+                {% if item.submenu %}
+                <li class="nav__item dropdown">
+                  <span class="nav__link dropdown-toggle">{{ item.title }} <ion-icon class="arrow-down" name="chevron-down"></ion-icon></span>
+                  <div class="dropdown-menu">
+                    {% for submenu-item in item.submenu %}
+                      <a href="{{ submenu-item.url }}" class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}}</a>
+                    {% endfor %}
+                  </div>
+                </li>
+
+                {% else %}
+                <li class="nav__item">
+                  <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} active-link{% endif %}">{{ item.title }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
+
+            </ul>
+          </div>
+
+          {% bookshop_include social-link %}
+        </nav>
+
+        <div class="nav-button">
+          <ion-icon class="nav__icon-menu" name="menu-outline"></ion-icon>
+        </div>
+
       </div>
-      <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-        {% assign owner_first_name = site.owner | split: " " %}
-        <h1 class="terminal-title">{{ owner_first_name[0] | downcase }}@home:~$</h1>
-      </a>
-    </div>
-    <div class="header-links">
-      {% include links.html %}
     </div>
   </div>
 </header>
-
-<style>
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.terminal-window {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 10px 20px;
-  border: 1px solid #30363d;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-.terminal-dots {
-  display: flex;
-  gap: 6px;
-}
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
-.terminal-title {
-  margin: 0 !important;
-  font-size: 20px !important;
-  text-shadow: 0 0 10px rgba(181, 232, 83, 0.5) !important;
-}
-</style>
+<!-- end header -->

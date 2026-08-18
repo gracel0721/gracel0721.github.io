@@ -1,31 +1,57 @@
-title: grace@home
-description: "Grace Leverett's personal blog about tech, life, and everything in between."
-author:
-  name: "Grace"
-  email: "gvleverett@gmail.com"
-  url: "https://gracel0721.github.io"
-baseurl: /
+title: Grace Leverett
 
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 3
-paginate_path: /page/:num/
+plugins:
+  - jekyll-bookshop
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# Multiple bookshops can be used on one website,
+# or different production / staging locations.
+bookshop_locations:
+  - ./component-library
+
+exclude:
+  - postcss.config.js
+  - node_modules
+
+include:
+  - _cloudcannon
+
+collections_dir: 'collections'
+
+collections:
+  pages:
+    output: true
+    permalink: /:slug/
+  projects:
+    output: true
+    permalink: /project/:slug/
+  testimonials:
+    output: false
+  posts:
+    output: true
+    permalink: /blog/:slug/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "posts"
     values:
-      layout: "post"
+      layout: default
+  - scope:
+      type: pages
+      path: _pages/index.html
+    values:
+      permalink: /
+  - scope:
+      type: projects
+    values:
+      layout: project
+  - scope:
+      type: posts
+    values:
+      layout: post
 
-future: true
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-
-# Custom variables
-owner : "Grace Leverett"
-year : "2025"
+# Tags
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty

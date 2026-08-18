@@ -1,0 +1,7 @@
+#-------------------------------
+# Social Links
+social:
+- {icon: "logo-linkedin", link: "https://www.linkedin.com/in/grace-leverett"}
+- {icon: "logo-github", link: "https://github.com/gracel0721"}
+- {icon: "logo-x", link: "https://x.com/grace_lev721"}
+- {icon: "mail", link: "mailto:gvleverett@gmail.com"}
