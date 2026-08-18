@@ -3,11 +3,6 @@ title: Contact
 layout: page
 ---
 
-<div class="contact-header">
-# Contact Me
-
-I'm always open to chatting about software engineering, data insights, or LLM workflows! 
-</div>
 
 <div class="contact-container">
     <div class="email-section">
