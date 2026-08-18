@@ -248,7 +248,7 @@
 			background: $background-color-alt;
 
 			&:hover {
-				color: $white;
+				color: #000000;
 			}
 		}
 		&.share__facebook {
@@ -336,8 +336,8 @@
 			font-size: 14px;
 			line-height: 1;
 			font-weight: 500;
-			color: $white;
-			opacity: 0.7;
+			color: #000000;
+			opacity: 0.8;
 		}
 
 		.post__nav__title {
@@ -345,11 +345,11 @@
 			font-size: 21px;
 			line-height: 1.4;
 			font-weight: 700;
-			color: $white;
+			color: #000000;
 
 			a {
 				&:hover {
-					color: $white;
+					color: #000000;
 				}
 			}
 		}
